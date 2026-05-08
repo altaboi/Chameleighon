@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const nav = document.querySelector(".nav");
-  const navInner = document.querySelector(".nav-inner");
+  const nav = document.querySelector("nav");
+  const navInner = document.querySelector(".site-nav");
 
   if (!nav || !navInner) return;
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.setAttribute("aria-label", "Open navigation menu");
     toggle.setAttribute("aria-expanded", "false");
     toggle.innerHTML = "<span></span><span></span><span></span>";
-    navInner.appendChild(toggle);
+    nav.parentNode.insertBefore(toggle, nav);
   }
 
   toggle.addEventListener("click", () => {
@@ -41,5 +41,25 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.setAttribute("aria-expanded", "false");
       toggle.setAttribute("aria-label", "Open navigation menu");
     }
+  });
+
+  const galleryCells = document.querySelectorAll('.g-cell');
+
+  function setActiveCell(clickedCell) {
+    galleryCells.forEach(cell => {
+      const isActive = cell === clickedCell && !cell.classList.contains('is-active');
+      cell.classList.toggle('is-active', isActive);
+      cell.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
+  }
+
+  galleryCells.forEach(cell => {
+    cell.addEventListener('click', () => setActiveCell(cell));
+    cell.addEventListener('keydown', event => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        setActiveCell(cell);
+      }
+    });
   });
 });

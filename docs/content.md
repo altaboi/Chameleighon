@@ -593,11 +593,11 @@ Contact Leigh — Free Quote | Chameleighon Spray Painting
 > Link: `https://wa.me/27823308900?text=Hi%20Leigh%2C%20I%27d%20like%20a%20free%20quote%20for%20spray%20painting`
 
 **Other contact methods:**
-> 📞 Call: [082 330 8900](tel:0823308900)
-> 📧 Email: [leigh.ehret@gmail.com](mailto:leigh.ehret@gmail.com)
-> 📸 Instagram: [@chameleighon](https://instagram.com/chameleighon)
-> 👍 Facebook: [@chameleighon](https://facebook.com/chameleighon)
-> 📍 Based in Stellenbosch, Western Cape, 7600
+> Call: [082 330 8900](tel:0823308900)
+> Email: [leigh.ehret@gmail.com](mailto:leigh.ehret@gmail.com)
+> Instagram: [@chameleighon](https://instagram.com/chameleighon)
+> Facebook: [@chameleighon](https://facebook.com/chameleighon)
+> Based in Stellenbosch, Western Cape, 7600
 
 **Note beneath contact details:**
 > Leigh aims to respond to all WhatsApp messages within a few hours. All quotes require a home visit — the only way to give you an accurate price is to see the space in person.
