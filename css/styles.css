@@ -106,11 +106,22 @@ a {
     font-weight: 600;
     font-family: var(--font-serif);
     min-width: 130px;
+    background: transparent;
 }
 
 .logo-link img {
-    height: 40px;
+    height: 52px;
+    max-height: 60px;
     width: auto;
+    background: transparent;
+}
+
+.logo-wordmark {
+    color: var(--color-white);
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: none;
 }
 
 
@@ -605,14 +616,29 @@ details.faq-item[open] .faq-icon {
     }
 
     .site-nav {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         gap: 1rem;
+        position: relative;
         height: auto;
+    }
+
+    .logo-link {
+        background: transparent;
+        padding: 0;
+    }
+
+    .logo-link img {
+        height: 52px;
+        max-height: 60px;
+        width: auto;
+        background: transparent;
     }
 
     .nav-links {
         margin: 0;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 1.5rem;
     }
 
@@ -648,9 +674,31 @@ details.faq-item[open] .faq-icon {
         display: flex;
     }
 
+    .site-nav {
+        justify-content: space-between;
+    }
+
     .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(44, 58, 53, 0.95);
+        backdrop-filter: blur(10px);
         flex-direction: column;
-        gap: 1rem;
+        padding: 1rem 0;
+        display: none;
+        z-index: 100;
+        gap: 0;
+    }
+
+    .nav-links a {
+        padding: 0.75rem 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
     }
 
     .service-grid,
